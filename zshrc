@@ -1,10 +1,14 @@
 export MAKEFLAGS='-j4'
 
+alias objdump='objdump -M intel'
 alias gcl="git clone"
 alias gp="git push"
 alias gst="git status"
 alias ls="ls --color=tty"
 alias l="ls -lah"
+alias norminettepython='python -m flake8'
+
+test ~/.config/google-chrome && rm -rf ~/.config/google-chrome/Singleton*
 
 autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
